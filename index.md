@@ -1,6 +1,8 @@
 ---
-title: "A Side Quest"
+title: "Exit Door Games Developer Blog"
 layout: home
 permalink: /
 ---
-A Side Quest
+ 
+
+

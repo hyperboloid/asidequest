@@ -1,13 +1,12 @@
-{%- assign page_paths = site.header_pages | default: default_paths -%}
 <header>
-  <div class="menu">
-    <ul>
-      {%- for path in page_paths -%}
-        {%- assign my_page = site.pages | where: "path", path | first -%}
-        {%- if my_page.title -%}
-        <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-        {%- endif -%}
-      {%- endfor -%}
+  <div class="menu" style="justify-content: space-between;display: flex;">
+    <div>
+        <img id="logo" style="vertical-align: middle;" src="/assets/images/logo-light.png" alt="logo" height="30"/>
+        <h6 style="vertical-align: middle; display: inline;">Exit Door Games &middot; Dev Blog</h6>
+    </div>
+    <ul style="margin-top:5px">
+        <li><a href="https://exitdoorgames.com">home</a></li>
+        <li><a href="https://blog.exitdoorgames.com">dev_blog</a></li>
     </ul>
   </div>
 </header>
