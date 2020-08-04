@@ -6,7 +6,8 @@ layout: default
 
 {%- if site.posts.size > 0 -%}
   <ul>
-    {%- for post in site.posts -%}
+    {% assign posts_by_date = site.posts | sort: "date" %}
+    {%- for post in posts_by_date -%}
     <li>
       {%- assign date_format = "%e %b %Y" -%}
       [ {{ post.date | date: date_format }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
