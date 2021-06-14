@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Multiplayer Game Server, Part 1
+title:  Multiplayer Game Server, Overview
 date:   2020-08-03 12:00:00 -0700
 categories: games
 tags:
@@ -16,7 +16,7 @@ Networked Games
 ---
 In networked gaming, each player interacts with the game through a game client installed on their local machine. Something needs to coordinate changes in game state between the game clients. So if player 1 moves forward, player 2 needs to be connected to some system of authority that will inform it that player 1 has moved forward.<br><br>
 
-It is possible to make one player's game client the authority and have all other players connect to it. This is a peer-to-peer networked game. This avoids the cost of hosting a separate game server and theoretically you could connect clients in the same room together locally without needing internet access.<br><br>
+It is possible to make one player's game client the authority and have all other players connect to it. This is peer-to-peer networked gaming. This avoids the cost of hosting a separate game server and theoretically you could connect clients in the same room together locally without needing internet access.<br><br>
 
 Assuming you are not in the same room, however, you will still need a matchmaking service to help clients find the system of authority. Also, using a peer as the authority is risky in case they have a bad internet connection or they want to cheat. This is still a common pattern, though, because Unity and Steam (and even Apple) offer matchmaking services so you can avoid hosting costs this way.<br><br>
 
